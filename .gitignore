@@ -4,7 +4,8 @@ node_modules/
 
 # Build outputs
 ../dist/
-out/
+/file-inspector/dist/
+/extension/dist/
 
 # Environment secrets
 .env
@@ -13,7 +14,3 @@ out/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Logs
-npm-debug.log*
-yarn-error.log*
