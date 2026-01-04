@@ -9,11 +9,12 @@
   ],
   "scripts": {
     "clean": "rimraf node_modules **/node_modules file-inspector/dist extension/dist package-lock.json",
-    "build:all": "npm i && npm run build -w file-inspector && npm run build -w extension",
+    "build:all": "npm i && npm run build:file-inspector && npm run build:extension",
     "test:all": "npm run test -w file-inspector",
     "dev:file-inspector": "npm run dev -w file-inspector",
     "build:extension": "npm run build -w extension",
-    "build:file-inspector": "npm run build -w file-inspector",
+    "build:file-inspector": "npm run build --workspace=file-inspector",
+    "start:file-inspector": "npm run start --workspace=file-inspector",
     "install:fresh": "npm run clean && npm run build:all"
   },
   "keywords": [],

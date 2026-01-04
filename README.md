@@ -20,7 +20,7 @@ npm run install:fresh
 To run the server and the extension builder simultaneously in watch mode, execute the following from the root directory:
 
 ```Bash
-npm run dev:file-inspector
+npm run start:file-inspector
 ```
 * **The Server:** Runs on http://localhost:3000.
 

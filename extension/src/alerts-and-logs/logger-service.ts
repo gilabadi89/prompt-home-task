@@ -7,7 +7,7 @@ export async function logResults(result: FileInspectResponse) {
     }
 
     if (! result.inspectPassed) {
-        console.warn('Inspection Failed!');
+        console.log('Inspection Failed!');
         console.log('Found ', result.violations, ' in ', result.fileName);
         await showSecurityWarning(result?.violations);
     } else {
