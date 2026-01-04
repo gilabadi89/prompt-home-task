@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "strict": true,
+    "include": ["src/**/*"],
+    "paths": {
+      "@shared/*": ["../../shared/*"]
+    }
+  }
+}

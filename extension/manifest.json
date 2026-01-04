@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Extension",
+  "description": "This extension should identify PDF risks in prompt queries",
+  "version": "1.0",
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://gemini.google.com/*",
+    "http://localhost:3000/*"
+  ]
+}

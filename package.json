@@ -1,0 +1,34 @@
+{
+  "name": "prompt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "extension",
+    "file-inspector"
+  ],
+  "scripts": {
+    "clean": "rimraf node_modules **/node_modules file-inspector/dist extension/dist package-lock.json",
+    "build:all": "npm i && npm run build -w file-inspector && npm run build -w extension",
+    "test:all": "npm run test -w file-inspector",
+    "dev:file-inspector": "npm run dev -w file-inspector",
+    "build:extension": "npm run build -w extension",
+    "build:file-inspector": "npm run build -w file-inspector",
+    "install:fresh": "npm run clean && npm run build:all"
+  },
+  "keywords": [],
+  "author": "Gil Abadi",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/sinon": "^21.0.0",
+    "chai": "^6.2.2",
+    "concurrently": "^9.2.1",
+    "mocha": "^11.7.5",
+    "rimraf": "^6.1.2",
+    "sinon": "^21.0.1",
+    "ts-node": "^10.9.2"
+  }
+}
