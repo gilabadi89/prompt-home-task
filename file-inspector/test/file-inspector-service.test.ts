@@ -12,7 +12,7 @@ describe('File Inspector Service Tests', () => {
         extractTextStub = sinon.stub();
         postTextExamineStub = sinon.stub(promptClient, 'postTextExamine');
 
-        //Need this since sinon have hard time to moch unpdf
+        //Need this since sinon have hard time to mock unpdf
         processPdfFiles = proxyquire('../src/services/file-inspector-service', {
             'unpdf': {
                 extractText: extractTextStub

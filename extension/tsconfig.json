@@ -4,11 +4,12 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "baseUrl": ".",
+    "rootDir": "..",
     "esModuleInterop": true,
     "strict": true,
-    "include": ["src/**/*"],
     "paths": {
       "@shared/*": ["../../shared/*"]
     }
-  }
+  },
+  "include": ["src/**/*", "test/**/*.ts", "../shared/**/*"]
 }

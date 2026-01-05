@@ -1,5 +1,5 @@
 import { inspectFiles } from '../clients/file-inspector-client';
-import { FileInspectResponse } from '../../../shared/types';
+import { FileInspectResponse } from '@shared/types';
 import { logResults } from '../alerts-and-logs/logger-service';
 
 

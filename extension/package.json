@@ -2,8 +2,7 @@
   "name": "extension",
   "version": "1.0.0",
   "scripts": {
-    "build": "esbuild src/content.ts src/background.ts --bundle --outdir=dist/",
-    "watch": "npm run build -- --watch"
+    "build": "esbuild src/content.ts src/background.ts --bundle --outdir=dist/"
   },
   "devDependencies": {
     "esbuild": "0.25.0",

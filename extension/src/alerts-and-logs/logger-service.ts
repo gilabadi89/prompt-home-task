@@ -1,4 +1,4 @@
-import { FileInspectResponse } from '../../../shared/types';
+import { FileInspectResponse } from '@shared/types';
 import { showSecurityWarning } from "./alerting-service";
 
 export async function logResults(result: FileInspectResponse) {

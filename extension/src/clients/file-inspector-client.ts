@@ -1,4 +1,4 @@
-import { FileInspectResponse } from '../../../shared/types';
+import { FileInspectResponse } from '@shared/types';
 
 export async function inspectFiles(files: File[]): Promise<FileInspectResponse> {
     const formData = new FormData();
