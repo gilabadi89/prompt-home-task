@@ -10,10 +10,10 @@ The extension supports real-time inspection of PDF files via both traditional fi
 * **npm:** v10.0.0 or higher
 
 ### Installation & Setup
-From the root directory, run the following to clean old artifacts and install all dependencies for the entire workspace (server, extension, and shared):
+From the root directory, run the following to install all dependencies for the entire workspace (server, extension, and shared):
 
 ```Bash
-npm run install:fresh
+npm run build:all
 ```
 
 #### Running the Project
